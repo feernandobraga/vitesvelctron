@@ -23,7 +23,7 @@
     </a>
   </div>
   <h1>Vite + Svelte + Electron :D</h1>
-  <h2>ViteSvelCtron</h2>
+  <h2>🌟 ViteSvelCtron! 🌟 </h2>
   <h4>Node version: {nodeVersion} | Chrome version: {chromeVersion} | Electron version: {electronVersion}</h4>
 
   <div class="card">
