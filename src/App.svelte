@@ -22,7 +22,7 @@
       <img src={electronLogo} class="logo electron" alt="Electron Logo" />
     </a>
   </div>
-  <h1>Vite + Svelte + Electron :D</h1>
+  <h1 class="text-3xl font-bold underline">Vite + Svelte + Electron :D</h1>
   <h2>🌟 ViteSvelCtron! 🌟 </h2>
   <h4>Node version: {nodeVersion} | Chrome version: {chromeVersion} | Electron version: {electronVersion}</h4>
 
