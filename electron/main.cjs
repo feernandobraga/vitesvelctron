@@ -3,24 +3,28 @@ const { log } = require('console')
 const { app, BrowserWindow } = require('electron')
 const path = require('path')
 
+const isDevEnvironment = process.env.DEV_ENV === 'true'
+
 const createWindow = () => {
     // Create the browser window.
     const mainWindow = new BrowserWindow({
-        width: 800,
+        width: 1300,
         height: 600,
         webPreferences: {
             preload: path.join(__dirname, 'preload.js')
         }
     })
 
-    // and load the index.html of the app.
-    // mainWindow.loadFile('index.html')
-    mainWindow.loadURL('http://localhost:5173/')
-    console.log('mainWindow.loadURL')
-    log('hello world')
-    log('Vitesvelctron')
+    // define how electron will load the app
+    if (isDevEnvironment){
+        log('Electron running in dev mode: 🧪')
+        mainWindow.loadURL('http://localhost:5173/');
+        mainWindow.webContents.openDevTools();
+    }
+    // console.log('mainWindow.loadURL')
+    // log('hello world')
     
-    // TODO: enable pre-load, Tailwind, build
+    // TODO: enable Tailwind, build
 
 
     // Open the DevTools.
