@@ -23,3 +23,6 @@ dist-ssr
 *.sln
 *.sw?
 package-lock.json
+
+out/
+electron/build
