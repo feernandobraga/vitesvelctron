@@ -22,19 +22,19 @@ const createWindow = () => {
     if (isDevEnvironment){
         log('Electron running in dev mode: 🧪')
         mainWindow.loadURL('http://localhost:5173/');
-        mainWindow.webContents.openDevTools();
+        
+        // Open the DevTools.
+        mainWindow.webContents.on("did-frame-finish-load", () => {
+            mainWindow.webContents.openDevTools();
+        });
     } else {
         log('Electron running in prod mode: 🚀')
         mainWindow.loadFile(path.join(__dirname, 'build', 'index.html'));
     }
-    // console.log('mainWindow.loadURL')
+
     log('hello world!')
     
     // TODO: enable Tailwind, build
-
-
-    // Open the DevTools.
-    // mainWindow.webContents.openDevTools()
 }
 
 // This method will be called when Electron has finished
