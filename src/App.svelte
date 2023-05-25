@@ -10,52 +10,35 @@
 
 </script>
 
-<main>
-  <div>
-    <a href="https://vitejs.dev" target="_blank" rel="noreferrer">
-      <img src={viteLogo} class="logo" alt="Vite Logo" />
-    </a>
-    <a href="https://svelte.dev" target="_blank" rel="noreferrer">
-      <img src={svelteLogo} class="logo svelte" alt="Svelte Logo" />
-    </a>
-    <a href="https://www.electronjs.org/" target="_blank" rel="noreferrer">
-      <img src={electronLogo} class="logo electron" alt="Electron Logo" />
-    </a>
-  </div>
-  <h1 class="text-3xl font-bold underline">Vite + Svelte + Electron :D</h1>
-  <h2>🌟 ViteSvelCtron! 🌟 </h2>
-  <h4>Node version: {nodeVersion} | Chrome version: {chromeVersion} | Electron version: {electronVersion}</h4>
-
-  <div class="card">
-    <Counter />
-  </div>
-
-  <p>
-    Check out <a href="https://github.com/sveltejs/kit#readme" target="_blank" rel="noreferrer">SvelteKit</a>, the official Svelte app framework powered by Vite!
-  </p>
-
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more!
-  </p>
-</main>
-
 <style>
-  .logo {
-    height: 6em;
-    padding: 1.5em;
-    will-change: filter;
-    transition: filter 300ms;
-  }
   .logo:hover {
-    filter: drop-shadow(0 0 2em #646cffaa);
-  }
-  .logo.svelte:hover {
-    filter: drop-shadow(0 0 2em #ff3e00aa);
-  }
-  .logo.electron:hover {
-    filter: drop-shadow(0 0 2em #A2ECFB);
-  }
-  .read-the-docs {
-    color: #888;
+    filter: drop-shadow(0 0 2rem #ff00ff); /* Change the shadow color here */
   }
 </style>
+
+<main class="min-h-screen bg-gray-900 text-white flex flex-col h-screen">
+  <!-- Top Part -->
+  <section class="flex justify-center items-center h-2/5 py-8">
+    <div class="flex items-center space-x-4 gap-16">
+      <img class="logo h-12" src={viteLogo} alt="Company Logo 1" />
+      <img class="logo h-12" src={svelteLogo} alt="Company Logo 2" />
+      <img class="logo h-12" src={electronLogo} alt="Company Logo 3" />
+      <img class="logo h-12" src={viteLogo} alt="Company Logo 4" />
+    </div>
+  </section>
+
+  <!-- Middle Part -->
+  <section class="flex flex-col items-center justify-center h-60vh">
+    <h1 class="text-4xl font-bold">Vite + Svelte + Electron + Tailwind</h1>
+    <!-- Additional content goes here -->
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 fixed bottom-0 left-0 w-full py-8">
+    <div class="container mx-auto text-center">
+      <p>Footer</p>
+    </div>
+  </footer>
+</main>
+
+
