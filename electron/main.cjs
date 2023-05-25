@@ -26,10 +26,10 @@ const createWindow = () => {
     })
 
     // define how electron will load the app
-    if (isDevEnvironment){
+    if (isDevEnvironment) {
         log('Electron running in dev mode: 🧪')
         mainWindow.loadURL('http://localhost:5173/');
-        
+
         // Open the DevTools.
         mainWindow.webContents.on("did-frame-finish-load", () => {
             mainWindow.webContents.openDevTools();
@@ -40,7 +40,7 @@ const createWindow = () => {
     }
 
     log('hello world!!!!!!!')
-    
+
     // TODO: enable Tailwind, build
 }
 
