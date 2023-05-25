@@ -7,6 +7,20 @@ if (require('electron-squirrel-startup')) app.quit();
 
 const isDevEnvironment = process.env.DEV_ENV === 'true'
 
+if (isDevEnvironment) {
+    // try {
+    //     require('electron-reloader')(module, {
+    //         debug: true,
+    //         watchRenderer: true
+    //     });
+    // } catch (_) { console.log('Error'); }
+    require('electron-reload')(__dirname, {
+        electron: path.join(__dirname, '..', 'node_modules', '.bin', 'electron'),
+        hardResetMethod: 'exit'
+    });
+    
+}
+
 let mainWindow;
 const createWindow = () => {
     // Create the browser window.
@@ -32,7 +46,7 @@ const createWindow = () => {
         mainWindow.loadFile(path.join(__dirname, 'build', 'index.html'));
     }
 
-    log('hello world!')
+    log('hello world!!!!!')
     
     // TODO: enable Tailwind, build
 }
