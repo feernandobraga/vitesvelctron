@@ -13,7 +13,7 @@ The "Vite + Svelte + Electron + Tailwind" repository is a powerful template desi
 - Tailwind CSS: Tailwind CSS is a utility-first CSS framework that empowers developers to rapidly build custom user interfaces. With its extensive set of utility classes, Tailwind CSS enables you to create visually stunning and responsive designs effortlessly.
 
 ## 👨‍💻 Installation and Usage
-To get started with the "Vite + Svelte + Electron + Tailwind" template, follow these simple steps (assuming you already have [Node.js](https://nodejs.org/) installed):
+To get started with building your app using this template, follow these simple steps (assuming you already have [Node.js](https://nodejs.org/) installed):
 
 Get a copy of this template by running the following command: 
 ```bash
@@ -35,7 +35,7 @@ Finally, start the development server:
 npm run dev
 ```
 
-To build the application, run the following command:
+When your app is ready, you can build by running the following command:
 ```bash
 npm run make
 ```
