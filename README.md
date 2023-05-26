@@ -51,7 +51,7 @@ Thank you for considering a donation. Your support is greatly appreciated! 🧡
 Contributions are always welcome! If you find any bugs, have feature requests, or would like to contribute in any other way, please feel free to open an issue or submit a pull request.
 
 ## 🧋 Technologies
-This template was made with following technologies:
+This template was made with the following technologies in mind:
 
 [Vite](https://vitejs.dev/): A fast build tool for web applications.
 
