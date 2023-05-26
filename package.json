@@ -11,7 +11,7 @@
     "dev2": "concurrently --kill-others \"vite\" \"npm run dev:electron2\"",
     "dev:vite": "vite",
     "dev:electron": "cross-env DEV_ENV=true npx electronmon electron/main.cjs",
-    "dev:electron2": "cross-env DEV_ENV=true electron-forge start",
+    "dev:electron2": "cross-env DEV_ENV=true electron .",
     "build": "vite build",
     "preview": "vite preview",
     "package": "npm run build && electron-forge package",

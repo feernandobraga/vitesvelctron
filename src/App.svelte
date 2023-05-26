@@ -58,12 +58,11 @@
 				If you are feeling generous, please consider buying me a coffee
 			</p>
 
-			<button
-				type="button"
+			<a 	href="https://www.buymeacoffee.com/feernandobraga"
 				class="flex items-center p-1 px-8 bg-indigo-600 hover:bg-indigo-700 text-white transition ease-in duration-200 text-center text-base shadow-md focus:outline-none rounded-md"
 			>
 				Buy me a coffee <span class="ml-3 text-2xl">☕️</span>
-			</button>
+			</a>
 		</div>
 	</footer>
 </main>
