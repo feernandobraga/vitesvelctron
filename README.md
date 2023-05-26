@@ -3,14 +3,14 @@
 ## 🚀 Description
 The "Vite + Svelte + Electron + Tailwind" repository is a powerful template designed to streamline the development process of modern applications. By leveraging the combined strengths of Vite, Svelte, Electron, and Tailwind CSS, this template provides an efficient and flexible foundation for building cross-platform desktop applications with a delightful user interface.
 
-## ✨ Features
-- Vite: Vite is a lightning-fast build tool for web applications. It optimizes the development experience with near-instantaneous hot module replacement (HMR) and an efficient build process.
+## 🧋 Technologies
+[Vite](https://vitejs.dev/): Vite is a lightning-fast build tool for web applications. It optimizes the development experience with near-instantaneous hot module replacement (HMR) and an efficient build process.
 
-- Svelte: Svelte is a revolutionary JavaScript framework that compiles your code to highly efficient JavaScript at build time. It offers a refreshing approach to building web applications by eliminating runtime overhead and delivering exceptional performance.
+[Svelte](https://svelte.dev/): Svelte is a revolutionary JavaScript framework that compiles your code to highly efficient JavaScript at build time. It offers a refreshing approach to building web applications by eliminating runtime overhead and delivering exceptional performance.
 
-- Electron: Electron enables the development of desktop applications using web technologies. It brings the power of Node.js and Chromium to build cross-platform apps with ease.
+[Electron](https://www.electronjs.org/): Electron enables the development of desktop applications using web technologies. It brings the power of Node.js and Chromium to build cross-platform apps with ease.
 
-- Tailwind CSS: Tailwind CSS is a utility-first CSS framework that empowers developers to rapidly build custom user interfaces. With its extensive set of utility classes, Tailwind CSS enables you to create visually stunning and responsive designs effortlessly.
+[Tailwind](https://tailwindcss.com/): Tailwind CSS is a utility-first CSS framework that empowers developers to rapidly build custom user interfaces. With its extensive set of utility classes, Tailwind CSS enables you to create visually stunning and responsive designs effortlessly.
 
 ## 👨‍💻 Installation and Usage
 To get started with building your app using this template, follow these simple steps (assuming you already have [Node.js](https://nodejs.org/) installed):
@@ -49,17 +49,6 @@ Thank you for considering a donation. Your support is greatly appreciated! 🧡
 
 ## 🧙‍♂️ Contributing 
 Contributions are always welcome! If you find any bugs, have feature requests, or would like to contribute in any other way, please feel free to open an issue or submit a pull request.
-
-## 🧋 Technologies
-This template was made with the following technologies in mind:
-
-[Vite](https://vitejs.dev/): A fast build tool for web applications.
-
-[Svelte](https://svelte.dev/): A radical JavaScript framework for building user interfaces.
-
-[Electron](https://www.electronjs.org/): A framework for creating cross-platform desktop applications with JavaScript, HTML, and CSS.
-
-[Tailwind](https://tailwindcss.com/): A utility-first CSS framework for rapidly building custom user interfaces.
 
 ## 📝 License
 This project is licensed under the MIT License.
