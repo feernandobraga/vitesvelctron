@@ -39,9 +39,6 @@ const createWindow = () => {
         mainWindow.loadFile(path.join(__dirname, 'build', 'index.html'));
     }
 
-    log('hello world!!!!!!!')
-
-    // TODO: enable Tailwind, build
 }
 
 // This method will be called when Electron has finished
