@@ -1,6 +1,6 @@
 {
-  "name": "vite-svelte-electron",
-  "description": "Vite + Svelte + Electron",
+  "name": "vite-svelte-electron-tailwind",
+  "description": "Vite + Svelte + Electron + Tailwind",
   "license": "MIT",
   "private": true,
   "version": "0.0.0",

@@ -7,6 +7,7 @@ if (require('electron-squirrel-startup')) app.quit();
 
 const isDevEnvironment = process.env.DEV_ENV === 'true'
 
+// enable live reload for electron in dev mode
 if (isDevEnvironment) {
     require('electron-reload')(__dirname, {
         electron: path.join(__dirname, '..', 'node_modules', '.bin', 'electron'),
@@ -15,7 +16,9 @@ if (isDevEnvironment) {
 }
 
 let mainWindow;
+
 const createWindow = () => {
+    
     // Create the browser window.
     mainWindow = new BrowserWindow({
         width: 1300,
@@ -27,18 +30,24 @@ const createWindow = () => {
 
     // define how electron will load the app
     if (isDevEnvironment) {
-        log('Electron running in dev mode: 🧪')
+
+        // if your vite app is running on a different port, change it here
         mainWindow.loadURL('http://localhost:5173/');
 
         // Open the DevTools.
         mainWindow.webContents.on("did-frame-finish-load", () => {
             mainWindow.webContents.openDevTools();
         });
-    } else {
-        log('Electron running in prod mode: 🚀')
-        mainWindow.loadFile(path.join(__dirname, 'build', 'index.html'));
-    }
 
+        log('Electron running in dev mode: 🧪')
+
+    } else {
+        
+        // when not in dev mode, load the build file instead
+        mainWindow.loadFile(path.join(__dirname, 'build', 'index.html'));
+
+        log('Electron running in prod mode: 🚀')
+    }
 }
 
 // This method will be called when Electron has finished
